@@ -17,3 +17,13 @@ Install and run perm:
  4681  2018-08-13 14:03:19 perm serve -h
  4682  2018-08-13 14:04:13 perm serve --db-driver in-memory --log-level debug --tls-certificate /tmp/perm-cert.crt --tls-key /tmp/perm-key.pem
 ```
+
+Generate Certificates:
+
+```
+cd ~/workspace/PermTest
+setup_external_mTLS
+```
+1. Run setup_external_mTLS
+2. Give the server certificates to Perm
+3. Put the client certificates in PermTest
